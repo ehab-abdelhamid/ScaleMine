@@ -1,11 +1,11 @@
 # ScaleMine
-Parallel Frequent Subgraph Mining
+ScaleMine: Scalable Parallel Frequent Subgraph Mining in a Single Large Graph
 
 This is the ScaleMine Source Release README
 Last updated for ScaleMine on 9 August, 2016
 -----------------------------------------------------------------------------
 
-OVERVIEW:
+##Overview:
 
 ScaleMine is a novel parallel frequent subgraph mining system for a single large
 graph. ScaleMine introduces a novel two-phase approach. The first phase is 
