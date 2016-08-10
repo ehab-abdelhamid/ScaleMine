@@ -14,7 +14,7 @@ guide intra-task parallelism.
 
 If you use ScaleMine in your research, please cite our paper:
  ```
-@inproceedings{pan2015runtime,
+@inproceedings{hamid2016scalemine,
   title={ScaleMine: Scalable Parallel Frequent Subgraph Mining in a Single Large Graph},
   author={Ehab Abdelhamid, Ibrahim Abdelaziz, Panos Kalnis, Zuhair Khayyat and Fuad Jamour},
   booktitle={Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis},
@@ -58,13 +58,15 @@ T: the number of threads per compute node
 EXAMPLE:
 
 Use the following command:
+```
 mpirun -n 2 pfsm -file ./Datasets/patent_citations.lg -freq 28000 -threads 4
-
+```
 to mine teh patent_citation graph for subgraphs having support larger than or
 equal to 28000 using 2 compute nodes; 1 master and 1 worker, the worker has 4
 threads.
 
-For running on a supercomputer using SLURM Job Scheduler:
+For running on a supercomputer using SLURM job scheduler:
+```
 #!/bin/bash
 #SBATCH --account=user-account
 #SBATCH --job-name=pfsm
@@ -80,6 +82,7 @@ export OMP_NUM_THREADS=32
 export MKL_NUM_THREADS=32
 export MPICH_MAX_THREAD_SAFETY=multiple
 srun --ntasks=256 pfsm -file /Datasets/patent_citations.lg -freq 28000 -threads 32
+```
 
 ##Output:
 
