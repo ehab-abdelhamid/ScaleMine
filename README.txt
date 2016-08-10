@@ -1,5 +1,5 @@
 This is the ScaleMine Source Release README
-Last updated for GraMi on 9 August, 2016
+Last updated for ScaleMine on 9 August, 2016
 -----------------------------------------------------------------------------
 
 OVERVIEW:
