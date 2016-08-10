@@ -43,7 +43,7 @@ Java JRE v1.6.0 or later
 - Build ScaleMine using the "compile.sh" script file
 
 ##Running:
-On a single machine:
+###Single Machine Mode:
 Run the tool using the following command:
 mpirun -n N pfsm -file GRAPH_FILE -freq F -threads T
 
@@ -65,6 +65,7 @@ to mine teh patent_citation graph for subgraphs having support larger than or
 equal to 28000 using 2 compute nodes; 1 master and 1 worker, the worker has 4
 threads.
 
+###Distributed Mode
 For running on a supercomputer using SLURM job scheduler:
 ```
 #!/bin/bash
