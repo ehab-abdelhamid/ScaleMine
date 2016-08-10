@@ -1,5 +1,4 @@
 # ScaleMine: Scalable Parallel Frequent Subgraph Mining in a Single Large Graph
-###Last updated for ScaleMine on 9 August, 2016
 -----------------------------------------------------------------------------
 
 ##Overview:
@@ -11,6 +10,8 @@ probability, while collecting various statistics. The second phase computes the
 exact solution by employing the results of the approximation to achieve good 
 load balance; prune the search space; generate efficient execution plans; and 
 guide intra-task parallelism.
+
+For more details, visit http://cloud.kaust.edu.sa/Pages/scalemine.aspx 
 
 If you use ScaleMine in your research, please cite our paper:
  ```
@@ -44,8 +45,10 @@ Java JRE v1.6.0 or later
 
 ##Running:
 ###Single Machine Mode:
-Run the tool using the following command:
+Run ScaleMine using the following command:
+```
 mpirun -n N pfsm -file GRAPH_FILE -freq F -threads T
+```
 
 N: the number of MPI computation nodes, make sure that there is at lease one 
 for th emaster and one for a worker. Best practice is to have one computation
@@ -55,7 +58,7 @@ GRAPH_FILE: the input graph file name, the supported graph format is .lg
 F: the user-give support threshold
 T: the number of threads per compute node
 
-EXAMPLE:
+Example:
 
 Use the following command:
 ```
