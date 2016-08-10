@@ -1,8 +1,5 @@
-# ScaleMine
-ScaleMine: Scalable Parallel Frequent Subgraph Mining in a Single Large Graph
-
-This is the ScaleMine Source Release README
-Last updated for ScaleMine on 9 August, 2016
+# ScaleMine: Scalable Parallel Frequent Subgraph Mining in a Single Large Graph
+###Last updated for ScaleMine on 9 August, 2016
 -----------------------------------------------------------------------------
 
 ##Overview:
@@ -15,13 +12,18 @@ exact solution by employing the results of the approximation to achieve good
 load balance; prune the search space; generate efficient execution plans; and 
 guide intra-task parallelism.
 
-For more details, check our paper:
-Ehab Abdelhamid, Ibrahim Abdelaziz, Panos Kalnis, Zuhair Khayyat and Fouad
-Jamour, 2016, “ScaleMine: Scalable Parallel Frequent Subgraph Mining in a Single
-Large Graph”, Proceedings of the International Conference for High Performance
-Computing, Networking, Storage and Analysis (Supercomputing'16)
-
-CONTENTS:
+If you use ScaleMine in your research, please cite our paper:
+ ```
+@inproceedings{pan2015runtime,
+  title={ScaleMine: Scalable Parallel Frequent Subgraph Mining in a Single Large Graph},
+  author={Ehab Abdelhamid, Ibrahim Abdelaziz, Panos Kalnis, Zuhair Khayyat and Fuad Jamour},
+  booktitle={Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis},
+  pages={11},
+  year={2016},
+  organization={ACM}
+}
+```
+##Contents:
 
     README ...................  This file
     LICENSE.txt ..............  License file (Open Source)
@@ -30,17 +32,17 @@ CONTENTS:
     SRC_*/ ...................  Directory containing ScaleMine source files
 
 
-REQUIREMENTS:
+##Dependencies:
 
 Java JRE v1.6.0 or later
 
-INSTALLATION:
+##Installation:
 
 - install MPI and Boost libraries on the target machine
 - Uncompress ScaleMine using any compression tool
 - Build ScaleMine using the "compile.sh" script file
 
-Running:
+##Running:
 On a single machine:
 Run the tool using the following command:
 mpirun -n N pfsm -file GRAPH_FILE -freq F -threads T
@@ -79,7 +81,15 @@ export MKL_NUM_THREADS=32
 export MPICH_MAX_THREAD_SAFETY=multiple
 srun --ntasks=256 pfsm -file /Datasets/patent_citations.lg -freq 28000 -threads 32
 
-OUTPUT:
+##Output:
 
 ScaleMine outputs the list of frequents subgraphs on the standard output.
 Also, the elapsed time is returned at the end.
+
+##License:
+ScaleMine is a free software: you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by
+the Free Software Foundation, either version 2 of the License, or (at your option) any later version.
+
+ScaleMine is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU Lesser General Public License for more details.
+You should have received a copy of the GNU Lesser General Public License along with ScaleMine.  If not, see <http://www.gnu.org/licenses/>.
+
