@@ -1,5 +1,4 @@
 # ScaleMine: Scalable Parallel Frequent Subgraph Mining in a Single Large Graph
------------------------------------------------------------------------------
 
 ##Overview:
 
