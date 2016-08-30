@@ -32,9 +32,17 @@ If you use ScaleMine in your research, please cite our paper:
     SRC_*/ ...................  Directory containing ScaleMine source files
 
 
-##Dependencies:
-
-Java JRE v1.6.0 or later
+## Dependencies
+ There are a few dependencies which must be satisfied in order to compile and run ScaleMine.
+ 
+ * build-essential and g++ (>= 4.4.7) [Required]
+   +  Needed for compiling ScaleMine.
+ 
+ * openssh-server [Required]
+    + Required to initialize MPI and establish connections among compute nodes.
+ 
+ * MPICH2 [Required]
+    + AdHash uses MPI for inter-node communication. Open MPI is not tested with ScaleMine.
 
 ##Installation:
 
