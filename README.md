@@ -1,6 +1,6 @@
 # ScaleMine: Scalable Parallel Frequent Subgraph Mining in a Single Large Graph
 
-##Overview:
+## Overview:
 
 ScaleMine is a novel parallel frequent subgraph mining system for a single large
 graph. ScaleMine introduces a novel two-phase approach. The first phase is 
@@ -23,7 +23,7 @@ If you use ScaleMine in your research, please cite our paper:
   organization={ACM}
 }
 ```
-##Contents:
+## Contents:
 
     README ...................  This file
     LICENSE.txt ..............  License file (Open Source)
@@ -44,14 +44,14 @@ If you use ScaleMine in your research, please cite our paper:
  * MPICH2 [Required]
     + AdHash uses MPI for inter-node communication. Open MPI is not tested with ScaleMine.
 
-##Installation:
+## Installation:
 
 - install MPI and Boost libraries on the target machine
 - Uncompress ScaleMine using any compression tool
 - Build ScaleMine using the "compile.sh" script file
 
-##Running:
-###Single Machine Mode:
+## Running:
+### Single Machine Mode:
 Run ScaleMine using the following command:
 ```
 mpirun -n N pfsm -file GRAPH_FILE -freq F -threads T
@@ -95,7 +95,7 @@ export MPICH_MAX_THREAD_SAFETY=multiple
 srun --ntasks=256 pfsm -file /Datasets/patent_citations.lg -freq 28000 -threads 32
 ```
 
-##Output:
+## Output:
 
 ScaleMine outputs the list of frequents subgraphs on the standard output.
 Also, the elapsed time is returned at the end.
