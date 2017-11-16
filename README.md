@@ -103,7 +103,7 @@ srun --ntasks=256 pfsm -file /Datasets/patent_citations.lg -freq 28000 -threads 
 ScaleMine outputs the list of frequents subgraphs on the standard output.
 Also, the elapsed time is returned at the end.
 
-##License:
+## License:
 ScaleMine is a free software: you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by
 the Free Software Foundation, either version 2 of the License, or (at your option) any later version.
 
