@@ -61,8 +61,11 @@ N: the number of MPI computation nodes, make sure that there is at lease one
 for th emaster and one for a worker. Best practice is to have one computation
 node at each separate machine, then for each machine set a number of parallel
 threads.
+
 GRAPH_FILE: the input graph file name, the supported graph format is .lg
+
 F: the user-give support threshold
+
 T: the number of threads per compute node
 
 Example:
