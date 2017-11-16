@@ -71,11 +71,11 @@ Use the following command:
 ```
 mpirun -n 2 pfsm -file ./Datasets/patent_citations.lg -freq 28000 -threads 4
 ```
-to mine teh patent_citation graph for subgraphs having support larger than or
+to mine the patent_citation graph for subgraphs having support larger than or
 equal to 28000 using 2 compute nodes; 1 master and 1 worker, the worker has 4
 threads.
 
-###Distributed Mode
+### Distributed Mode
 For running on a supercomputer using SLURM job scheduler:
 ```
 #!/bin/bash
