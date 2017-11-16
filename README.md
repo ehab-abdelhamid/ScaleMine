@@ -10,8 +10,6 @@ exact solution by employing the results of the approximation to achieve good
 load balance; prune the search space; generate efficient execution plans; and 
 guide intra-task parallelism.
 
-For more details, visit http://cloud.kaust.edu.sa/Pages/scalemine.aspx 
-
 If you use ScaleMine in your research, please cite our paper:
  ```
 @inproceedings{hamid2016scalemine,
