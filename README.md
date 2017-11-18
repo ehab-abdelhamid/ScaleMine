@@ -40,7 +40,7 @@ If you use ScaleMine in your research, please cite our paper:
     + Required to initialize MPI and establish connections among compute nodes.
  
  * MPICH2 [Required]
-    + AdHash uses MPI for inter-node communication. Open MPI is not tested with ScaleMine.
+    + ScaleMine uses MPI for inter-node communication. Open MPI is not tested with ScaleMine.
 
 ## Installation:
 
